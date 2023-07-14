@@ -50,6 +50,14 @@ return {
           return
         end
 
+        if client.name == 'cssls' then
+          return
+        end
+
+        if client.name == 'html' then
+          return
+        end
+
         -- Create an autocmd that will run *before* we save the buffer.
         --  Run the formatting command for the LSP that has just attached.
         vim.api.nvim_create_autocmd('BufWritePre', {
