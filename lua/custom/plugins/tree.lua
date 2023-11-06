@@ -3,16 +3,16 @@
 --
 -- See the kickstart.nvim README for more information
 return {
-        {
-            'nvim-tree/nvim-tree.lua',
-            version = '*',
-            dependencies = { 'nvim-tree/nvim-web-devicons' },
-            opts = {
-                view = {
-                    number = true,
-                    relativenumber = true,
-                }
-            },
+    {
+        'nvim-tree/nvim-tree.lua',
+        version = '*',
+        dependencies = { 'nvim-tree/nvim-web-devicons' },
+        opts = {
+            view = {
+                number = true,
+                relativenumber = true,
+            }
         },
     },
     vim.keymap.set('n', '<Leader>t', ':NvimTreeFindFileToggle<CR>')
+}
