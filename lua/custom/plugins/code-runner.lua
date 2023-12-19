@@ -8,9 +8,10 @@ return {
         config = function()
             require('code_runner').setup {
                 filetype = {
-                    python = 'python -u'
-                }
-            })
+                    python = 'python -u',
+                    sh = 'bash',
+                },
+            }
         end,
     },
     vim.keymap.set('n', '<Leader><CR>', ':RunCode<CR>'),
